@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block body_block %}
-		<h1>Add a Page for the '{{ category.slug }}' Category</h1>
+		<h1>Add a Page for the '{{ category.name }}' Category</h1>
 		<div>
 			<form id="page_form" method="post" action="{% url 'add_page' category.slug %}">
 				{% csrf_token %}
